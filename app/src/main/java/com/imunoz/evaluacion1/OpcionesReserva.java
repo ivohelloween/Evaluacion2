@@ -125,7 +125,7 @@ public class OpcionesReserva extends AppCompatActivity {
                             Reserva r = new Reserva();
                             r.setHora(textoHora.getText().toString());
                             r.setFecha(fecha);
-                            r.setFecha(tipoCancha.getText().toString());
+                            r.setTipoCancha(tipoCancha.getText().toString()); //Corregi a las 17:25
 
                             lista.add(r);
                             nuevo.setListaReservas(lista);
@@ -179,19 +179,19 @@ public class OpcionesReserva extends AppCompatActivity {
     }
 
     public void verReservas(View view) {
-
+        StringBuilder str = new StringBuilder(); //Corregi a las 17:25
         if(lista.size()==0){
             Toast.makeText(OpcionesReserva.this, "El usuario no tiene reservas.", Toast.LENGTH_LONG).show();
         }else{
-            StringBuilder str = new StringBuilder();
-            str.append("Listado de reservas:\n");
-            for(int i=0;i<=lista.size();i++){
-                str.append("\nFecha: "+lista.get(i).getFecha() +" Hora: "+lista.get(i).getHora()+" Tipo cancha: "+lista.get(i).getTipoCancha() );
 
+            //str.append("Listado de reservas:\n"); //Corregi a las 17:25
+            for(int i=0;i<lista.size();i++){
+               str.append("\n" + String.valueOf(i+1) + ".- Fecha: "+lista.get(i).getFecha() +" Hora: "+lista.get(i).getHora()+" Tipo cancha: "+lista.get(i).getTipoCancha() ); //Corregi a las 17:25
+               // str.append("\nFecha: "+lista.get(i).getFecha() );
             }
 
-/*
-            new AlertDialog.Builder(this)
+
+            new AlertDialog.Builder(this) //Corregi a las 17:25
 
                     .setTitle("Listado de reserva.")
                     .setMessage(str.toString())
@@ -215,7 +215,7 @@ public class OpcionesReserva extends AppCompatActivity {
 
                     .create()
                     .show();
-*/
+
 
 
         }
