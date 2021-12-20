@@ -6,6 +6,7 @@ import android.app.AlertDialog;
 import android.app.DatePickerDialog;
 import android.app.TimePickerDialog;
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -179,42 +180,18 @@ public class OpcionesReserva extends AppCompatActivity {
     }
 
     public void verReservas(View view) {
-        StringBuilder str = new StringBuilder(); //Corregi a las 17:25
+        StringBuilder str = new StringBuilder();
         if(lista.size()==0){
             Toast.makeText(OpcionesReserva.this, "El usuario no tiene reservas.", Toast.LENGTH_LONG).show();
         }else{
 
-            //str.append("Listado de reservas:\n"); //Corregi a las 17:25
-            for(int i=0;i<lista.size();i++){
-               str.append("\n" + String.valueOf(i+1) + ".- Fecha: "+lista.get(i).getFecha() +" Hora: "+lista.get(i).getHora()+" Tipo cancha: "+lista.get(i).getTipoCancha() ); //Corregi a las 17:25
-               // str.append("\nFecha: "+lista.get(i).getFecha() );
-            }
+
+            Intent intent = new Intent(this, ListarReservas.class);
+            intent.putExtra("reservas", lista);
+            startActivity(intent);
 
 
-            new AlertDialog.Builder(this) //Corregi a las 17:25
 
-                    .setTitle("Listado de reserva.")
-                    .setMessage(str.toString())
-                    .setCancelable(true)
-
-                    .setPositiveButton("Cerrar", new DialogInterface.OnClickListener() {
-                        @Override
-                        public void onClick(DialogInterface dialogInterface, int i) {
-
-
-                            finish();
-                        }
-                    })
-
-                    .setNegativeButton("Volver", new DialogInterface.OnClickListener() {
-                        @Override
-                        public void onClick(DialogInterface dialogInterface, int i) {
-                            dialogInterface.cancel();
-                        }
-                    })
-
-                    .create()
-                    .show();
 
 
 

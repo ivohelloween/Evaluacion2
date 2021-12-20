@@ -10,11 +10,14 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Evaluacion1">
         <activity
+            android:name=".ListarReservas"
+            android:exported="false" />
+        <activity
             android:name=".OpcionesReserva"
             android:exported="false" />
         <activity
             android:name=".MainActivity"
-            android:exported="true"></activity>
+            android:exported="true" />
         <activity
             android:name=".RegistrarUsuario"
             android:exported="true">

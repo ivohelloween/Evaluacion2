@@ -3,9 +3,11 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/Administrador/Downloads/mapbox-android-demo-master/mapbox-android-demo-master/Evaluacion1/app/src/main/res/layout/activity_listar_reservas.xml" value="0.1875" />
         <entry key="..\:/Users/Administrador/Downloads/mapbox-android-demo-master/mapbox-android-demo-master/Evaluacion1/app/src/main/res/layout/activity_main.xml" value="0.2536231884057971" />
         <entry key="..\:/Users/Administrador/Downloads/mapbox-android-demo-master/mapbox-android-demo-master/Evaluacion1/app/src/main/res/layout/activity_opciones_reserva.xml" value="0.2536231884057971" />
         <entry key="..\:/Users/Administrador/Downloads/mapbox-android-demo-master/mapbox-android-demo-master/Evaluacion1/app/src/main/res/layout/activity_registrar_usuario.xml" value="0.2536231884057971" />
+        <entry key="..\:/Users/Administrador/Downloads/mapbox-android-demo-master/mapbox-android-demo-master/Evaluacion1/app/src/main/res/layout/tarjeta.xml" value="0.1875" />
       </map>
     </option>
   </component>
