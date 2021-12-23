@@ -68,7 +68,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="5dp"
                     android:layout_marginRight="10dp"
-                    android:text="Ver Reservas" />
+                    android:text="Ver Noticia" />
 
                 <Button
                     android:id="@+id/botonEliminar"
@@ -76,7 +76,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="5dp"
                     android:layout_marginRight="10dp"
-                    android:text="Eliminar Reserva" />
+                    android:text="Eliminar Noticia" />
 
             </LinearLayout>
         </LinearLayout>

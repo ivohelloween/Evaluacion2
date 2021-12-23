@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".RegistrarUsuario">
+    tools:context=".MostrarNoticia">
 
     <LinearLayout
         android:id="@+id/linearLayout"
@@ -34,7 +34,7 @@
             android:id="@+id/textView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Ingresa titulo" />
+            android:text="Titulo" />
 
         <EditText
             android:id="@+id/entradaFecha"
@@ -50,7 +50,7 @@
             android:id="@+id/textView2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Ingresa contenido"
+            android:text="Contenido"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent" />
 
@@ -64,40 +64,32 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent" />
 
-        <Button
-            android:id="@+id/button3"
+        <TextView
+            android:id="@+id/textView3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:onClick="IngresarFoto"
-            android:text="Tomar foto"
+            android:text="Ubicación"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent" />
+
+        <EditText
+            android:id="@+id/entradaUbicacion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Ej: El Boris le vuela la raja al Kast en segunda vuelta"
+            android:inputType="textPersonName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
 
         <Button
             android:id="@+id/textoUbicacion"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:onClick="BuscarUbicacion"
 
-            android:text="Capturar localización"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent" />
-
-        <Button
-            android:id="@+id/button"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:onClick="CrearUsuario"
-            android:text="crear noticia"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent" />
-
-        <Button
-            android:id="@+id/button2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:onClick="ListarNoticias"
-            android:text="Listar noticia"
+            android:onClick="mostrarMap"
+            android:text="MOSTRAR LOCALIZACION"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent" />
 
